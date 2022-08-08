@@ -15,17 +15,17 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="user_css/main.min.css">
     </head>
     <body class="o-page">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div class="o-page__sidebar js-page-sidebar">
+        <!-- <div class="o-page__sidebar js-page-sidebar">
             <div class="c-sidebar">
                 <a class="c-sidebar__brand" href="#">
-                    <img class="c-sidebar__brand-img" src="img/logo.png" alt="Logo"> Dashboard
+                    <img class="c-sidebar__brand-img" src="user_img/logo.png" alt="Logo"> Dashboard
                 </a>
                 
                 <h4 class="c-sidebar__title">Dashboards</h4>
@@ -182,9 +182,9 @@
                             <li><a class="c-sidebar__link" href="#">Submenu link</a></li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
 
-                <h4 class="c-sidebar__title">Account</h4>
+                <!-- <h4 class="c-sidebar__title">Account</h4>
                 <ul class="c-sidebar__list">
                     <li class="c-sidebar__item">
                         <a class="c-sidebar__link" target="_blank" href="account-details.html">
@@ -244,8 +244,8 @@
                     </li>
                 </ul>
 
-            </div><!-- // .c-sidebar -->
-        </div><!-- // .o-page__sidebar -->
+            </div>
+        </div> -->
 
         <main class="o-page__content">
             <header class="c-navbar u-mb-medium">
@@ -255,53 +255,8 @@
                     <span class="c-sidebar-toggle__bar"></span>
                 </button><!-- // .c-sidebar-toggle -->
 
-                <h2 class="c-navbar__title u-mr-auto">Account Settings</h2>
+                <h2 class="c-navbar__title u-mr-auto">MFTP</h2>
                 
-                <div class="c-dropdown u-hidden-down@mobile">
-                    <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="c-notification__icon">
-                            <i class="fa fa-user-o"></i>
-                        </span>
-                        <span class="c-notification__number">3</span>
-                    </a>
-
-                    <div class="c-dropdown__menu c-dropdown__menu--large dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuUser">
-                        <a href="#" class="c-dropdown__item dropdown-item o-media">
-                            <span class="o-media__img u-mr-xsmall">
-                                <span class="c-avatar c-avatar--xsmall">
-                                    <img class="c-avatar__img" src="img/avatar1-72.jpg" alt="User's Profile Picture">
-                                </span>
-                            </span>
-                            <div class="o-media__body">
-                                <h6 class="u-mb-zero">Someone mentioned you</h6>
-                                <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
-                            </div>
-                        </a>
-                        <a href="#" class="c-dropdown__item dropdown-item o-media">
-                            <span class="o-media__img u-mr-xsmall">
-                                <span class="c-avatar c-avatar--xsmall">
-                                    <img class="c-avatar__img" src="img/avatar2-72.jpg" alt="User's Profile Picture">
-                                </span>
-                            </span>
-                            <div class="o-media__body">
-                                <h6 class="u-mb-zero">Recieved a Payment</h6>
-                                <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
-                            </div>
-                        </a>
-                        <a href="#" class="c-dropdown__item dropdown-item o-media">
-                            <span class="o-media__img u-mr-xsmall">
-                                <span class="c-avatar c-avatar--xsmall">
-                                    <img class="c-avatar__img" src="img/avatar3-72.jpg" alt="User's Profile Picture">
-                                </span>
-                            </span>
-                            <div class="o-media__body">
-                                <h6 class="u-mb-zero">You got a promotion</h6>
-                                <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
                 <div class="c-dropdown dropdown u-mr-medium u-ml-small u-hidden-down@mobile">
                     <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuAlerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="c-notification__icon">
@@ -359,13 +314,13 @@
 
                 <div class="c-dropdown dropdown">
                     <a  class="c-avatar c-avatar--xsmall has-dropdown dropdown-toggle" href="#" id="dropdwonMenuAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="c-avatar__img" src="img/avatar-72.jpg" alt="User's Profile Picture">
+                        <img class="c-avatar__img" src="user_img/avatar-72.jpg" alt="User's Profile Picture">
                     </a>
 
                     <div class="c-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdwonMenuAvatar">
-                        <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
-                        <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
-                        <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
+                        <a class="c-dropdown__item dropdown-item" href="user_dashboard.html">Home</a>
+                        <a class="c-dropdown__item dropdown-item" href="#">Recent Transactions</a>
+                       
                     </div>
                 </div>
             </header>
@@ -377,9 +332,9 @@
                         <div class="c-tabs">
                         
                             <ul class="c-tabs__list c-tabs__list--splitted nav nav-tabs" id="myTab" role="tablist">
-                                <li class="c-tabs__item"><a class="c-tabs__link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a></li>
+                                <li class="c-tabs__item"><a class="c-tabs__link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">My Profile</a></li>
 
-                                <li class="c-tabs__item"><a class="c-tabs__link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a></li>
+                               
                             </ul>
 
                             <div class="c-tabs__content tab-content" id="nav-tabContent">
@@ -387,7 +342,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 u-text-center">
                                             <div class="c-avatar c-avatar--xlarge u-inline-block">
-                                                <img class="c-avatar__img" src="img/avatar-200.jpg" alt="Avatar">
+                                                <img class="c-avatar__img" src="user_img/avatar-200.jpg" alt="Avatar">
                                             </div>
 
                                             <a class="u-block u-color-primary" href="#">Edit Avatar</a>
@@ -448,7 +403,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 u-text-center">
                                             <div class="c-avatar c-avatar--xlarge u-inline-block">
-                                                <img class="c-avatar__img" src="img/avatar2-200.jpg" alt="Avatar">
+                                                <img class="c-avatar__img" src="user_img/avatar2-200.jpg" alt="Avatar">
                                             </div>
                                             <a class="u-block u-color-primary" href="#">Edit Avatar</a>
                                         </div>
@@ -513,7 +468,7 @@
                     <div class="col-lg-6">
                         <div class="c-credit-card u-mb-large">
                             <div class="c-credit-card__card">
-                                <img class="c-credit-card__logo" src="img/logo-visa.png" alt="Visa Logo">
+                                <img class="c-credit-card__logo" src="user_img/logo-visa.png" alt="Visa Logo">
                                 <h5 class="c-credit-card__number">**** **** **** 3528</h5>
                                 <p class="c-credit-card__status">Valid Thru 11/18</p>
                             </div>
@@ -555,7 +510,7 @@
                 </div>
             </div><!-- // .container -->
         </main>
-        
-        <script src="js/main.min.js"></script>
+        <script src="https://kit.fontawesome.com/d0d4a8dd27.js" crossorigin="anonymous"></script>
+        <script src="user_js/main.min.js"></script>
     </body>
 </html>
