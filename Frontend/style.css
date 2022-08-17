@@ -1194,6 +1194,9 @@ ul.info-list.info_on_right_side li:last-child {
   display: table-cell;
   vertical-align: middle;
   padding: 15px 0;
+  width: 150px !important;
+  height: 10px !important;
+
 }
 
 /*--------------------------------------------------------------
