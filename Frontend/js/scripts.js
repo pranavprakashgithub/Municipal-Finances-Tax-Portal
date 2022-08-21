@@ -4,8 +4,8 @@
     //Preloader
     Royal_Preloader.config({
         mode           : 'logo',
-        logo           : 'images/logo-blue.png',
-        logo_size      : [187, 40],
+        logo           : 'images/MFTP-logo.png',
+        logo_size      : [200, 60],
         showProgress   : true,
         showPercentage : true,
         text_colour: '#0a0f2b',

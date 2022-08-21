@@ -8316,4 +8316,21 @@ textarea.form-control {
   display: none;
   font-size: 16px;
   font-weight: 500;
-  color: #2553b8; }
+  color: #2553b8; 
+}
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 41%;
+    padding: 20px;
+    z-index: 9;
+    background-color: darkblue;
+    color: white;
+  }
+  
+ 
+
+ 
+ 
+ 
