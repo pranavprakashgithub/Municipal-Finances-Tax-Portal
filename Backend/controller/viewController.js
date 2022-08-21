@@ -31,3 +31,6 @@ exports.userProfile = (req, res) => {
 exports.requestRegister = (req, res) => {
   res.status(200).render("request_register");
 };
+exports.generateTax = (req, res) => {
+  res.status(200).render("generate_tax_form");
+};
