@@ -29,64 +29,103 @@
 									
 									
 				      		
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+									<form method="#" id="contactForm" name="contactForm" class="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
 													<label class="label" for="name">Full Name</label>
-													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
 												</div>
 											</div>
 											<div class="col-md-6"> 
 												<div class="form-group">
 													<label class="label" for="email">Email Address</label>
-													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
-													<label class="label" for="category">Category</label>
-													<select  class="form-control" style=" padding: 5px;" id="category" name="category" placeholder="--Select--">
-														<option value="default">--Select--</option>
-														<option value="saab">Saab</option>
-														<option value="fiat">Fiat</option>
-														<option value="audi">Audi</option>
-													</select>
+													<label class="label" for="aadhar">Aadhar Number</label>
+													<input type="number" class="form-control" name="aadhar" id="aadhar" placeholder="XXXX-XXXX-XXXX-XXXX" required>
 													
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="category" >Category</label>
+													<select  class="form-control" style=" padding: 5px;" onchange="update()" id="category" name="category">
+														<option value="default">--Select--</option>
+														<option value="Residential">Residential</option>
+														<option value="Commercial">Commercial</option>
+														<option value="OpenLand">OpenLand</option>
+														<option value="Construction">Construction</option>
+														
+														
+													</select>
 												</div>
 											</div>
 											<div class="col-md-6"> 
 												<div class="form-group">
 													<label class="label" for="size">Property Size in (sqft)</label>
-													<input type="number" class="form-control" name="size" id="size" placeholder="0.00">
+													<input type="number" class="form-control" name="size" id="size" placeholder="0.00" required>
 												</div>
 											</div>
 											<div class="col-md-6"> 
 												<div class="form-group">
 													<label class="label" for="size">Property Number</label>
-													<input type="number" class="form-control" name="size" id="size" placeholder="XXXXXXX-XXXXXX">
+													<input type="number" class="form-control" name="size" id="size" placeholder="XXXXXXX-XXXXXX" required>
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="basevalue">Base Value</label>
+													<input type="number" class="form-control" name="basevalue" id="basevalue" placeholder="XXXX" required>
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="age">Age Factor</label>
+													<input type="number" class="form-control" name="age" id="age" placeholder="XXXXXXX-XXXXXX" required>
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="ward">Ward Number</label>
+													<input type="number" class="form-control" name="ward" id="ward" placeholder="XXXXXXX-XXXXXX" required>
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div  id="floor" class="form-group">
+													
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="#">Property Address</label>
-													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="3" placeholder="Message" required></textarea>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="doc">Tax Related Documents</label>
 													<br>
-													<input type="file"  name="doc" id="doc">
+													<input type="file"  name="doc" id="doc" required>
 												</div>
 											</div>
 											
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="submit" value="Generate Tax" class="btn btn-primary">
+													<button onclick="openForm()" type="submit" class="btn btn-primary" id="submit">Generate Tax</button>
 													
 												</div>
+												<div class="form-popup" id="myForm">
+													   <p style="font-size: 1.5 rem;">Your Tax Report Has Been Generated</p>
+													  <button style="color: white;background-color: #04AA6D;" type="submit" class="btn btn-lg btn-block">Pay</button>
+													  <button style="color :white;background-color: red;" type="button" class="btn btn-lg btn-block" onclick="closeForm()">Cancel</button>
+													
+												 </div>
 											</div>
+											
 										</div>
 									</form>
 								</div>

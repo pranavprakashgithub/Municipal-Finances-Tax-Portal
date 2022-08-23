@@ -22,5 +22,6 @@ router
   .get(authController.protect, viewController.userProfile);
 
 router.route("/requestRegister").get(viewController.requestRegister);
+router.route("/generateTaxForm").get(viewController.generateTax);
 
 module.exports = router;
