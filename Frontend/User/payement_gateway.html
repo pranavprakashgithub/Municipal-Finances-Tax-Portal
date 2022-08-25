@@ -5,21 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment | Gateway</title>
-    <link rel="stylesheet" href="user_css/">
+    <link rel="stylesheet" href="user_css/gateway_style.css">
 </head>
 <body>
     <div id="page">
         <div class="container">
             <div class="outer">
-                <!-- <div class="header">
-                    <div class="logo">
-                        <a href="#"></a>
-                    </div>
-                    <div class="time-left">
-                        <time id="time">03:00</time>
-                        <span>time left !</span>
-                    </div>
-                </div> -->
+                <div class="header">
+                    <p style="color: red;">You can pay full tax at a time or you can choose to pay  the tax through EMI option on the right</p>
+                </div>
                 <section class="payment">
                     <div class="left">
                         <form action="">
@@ -65,9 +59,16 @@
                     </div>
                     <div class="right">
                         <div class="options">
+                            <div style="text-align: center;" class="card-number">
+                                <p style="font-weight: bold;color: rgb(17, 0, 255);"><button style="background-color: rgb(174, 15, 189);color: white;padding: 10px; width: 80px; margin-bottom: 5%;border:none ;">EMI</button></p>
+                                
+                            </div>
                             <select name="emi" onchange="changeForm()" id="emi">
-                                <option value="default" selected>--select--</option>
-                                <option value="emi">EMI</option>
+                                <option  selected>--select--</option>
+                                <option style=" font-family: 'Nunito',sans-serif;" value="two">2 months</option>
+                                <option value="three">3 months</option>
+                                <option value="six">6 months</option>
+                                <option value="twelve">12 months</option>
                             </select>
                         </div>
                         <div class="card-virtual">
@@ -75,7 +76,7 @@
                             <p class="name-holder">Arnab Chowdhury</p>
                             <p class="chip"></p>
                             <p class="highlight">
-                                <span class="last-digit" id="card-number">.... .... .... 4568</span>
+                                <span class="last-digit" id="card-number">XXX XXX XXX 4568</span>
                                 <span class="expiry">
                                     <span class="exp-month">11</span>/
                                     <span class="exp-year">25</span>
@@ -85,8 +86,8 @@
                         <div class="reciept">
                             <ul>
                                 <li>
-                                    <span>Order Numebr</span>
-                                    <span>1540201</span>
+                                    <span>Total</span>
+                                    <span id="rupees">1540</span>
                                 </li>
                             </ul>
                         </div>

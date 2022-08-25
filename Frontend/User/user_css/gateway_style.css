@@ -249,9 +249,13 @@ header .time-left
 .options select
 {
     position: relative;
-    margin-bottom: 20%;
-    margin-left: 10%;
+    margin-bottom: 28%;
+    margin-left: 33%;
     padding: 10px;
+}
+.options select option p
+{
+    font-family: 'Nunito',sans-serif;
 }
 @media screen and (min-width : 576px) {
 
