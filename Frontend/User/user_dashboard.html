@@ -16,6 +16,7 @@
 
         <!-- Stylesheet -->
         <link rel="stylesheet" href="user_css/main.min.css">
+        <link rel="stylesheet" href="user_css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
     <body class="o-page">
@@ -102,16 +103,17 @@
                 </div>
             </header>
 
-            <div class="container-fluid">
+            <div class="">
                 <div id="carouselExampleControls" class="carousel slide mt-4 mb-5" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" style="margin-top: -2%;">
                       <div class="carousel-item active">
-                        <img src="user_img/modi3.jpg" class="d-block w-100" alt="...">
+                        <img src="user_img/modi4.jpg" class="d-block " style="margin-top: 0%;" alt="...">
                       </div>
-                    
+                      
                     </div>
-                   
+                    
                 </div>
+                
                 <!-- <div style="margin: 0; margin-top: -5%;" class="banner">
                     <div style="margin: 0;" class="banner-inner">
                         <div style="margin: 0;" class="banner-img">
@@ -119,114 +121,42 @@
                         </div>
                     </div>
                 </div> -->
-                <div style="position: relative; top: -150px;" class="generate-tax">
-                    <a href="confirmation_form.html"><button type="button" class="btn btn-outline-success btn-lg p-2">Generate Tax <span><i class="fa-solid fa-arrow-right"></i></span></button></a> 
-                    <a href="request_register.html"><button  style="margin-left: 5%;" type="button" class="btn btn-outline-success btn-lg p-2">Request For Registration <span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                <div style="position: relative; top: -100px;left: 185px;" class="generate-tax">
+                    <a href="confirmation_form.html"><button type="button" style="background-color:#F9961E ; color: white; " class="btn generate  btn-lg p-2">Generate Tax <span><i class="fa-solid fa-arrow-right"></i></span></button></a> 
+                    <a href="request_register.html"><button  style="margin-left: 5%; background-color: green; color: white;" type="button"  class="btn  btn-lg p-2">Request For Registration <span><i class="fa-solid fa-arrow-right"></i></span></button></a>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-6">
                         <div class="c-graph-card" data-mh="graph-cards">
                             <div class="c-graph-card__content">
-                                <h3 class="c-graph-card__title">Next Payout</h3>
-                                <p class="c-graph-card__date">Activity from 4 Jan 2017 to 10 Jan 2017</p>
+                                <h3 class="c-graph-card__number">Tax Payement History</h3>
+                                
                                 <h4 class="c-graph-card__number">$2,190</h4>
-                                <p class="c-graph-card__status">You’ve made $230 Today</p>
+                                
                             </div>
                             
-                            <div class="c-graph-card__chart">
+                            <!-- <div class="c-graph-card__chart">
                                 <canvas id="js-chart-payout" width="300" height="74"></canvas>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
-                    <div class="col-xl-4">
+                    <div class="col-xl-6">
                         <div class="c-graph-card" data-mh="graph-cards">
                             <div class="c-graph-card__content">
-                                <h3 class="c-graph-card__title">Total Earnings</h3>
-                                <p class="c-graph-card__date">In 15 Months</p>
+                                <h3 class="c-graph-card__number">Pending Tax</h3>
+                             
                                 <h4 class="c-graph-card__number">$23,580</h4>
-                                <p class="c-graph-card__status">Last Month you’ve made $2,980</p>
+                                
                             </div>
                             
-                            <div class="c-graph-card__chart">
+                            <!-- <div class="c-graph-card__chart">
                                 <canvas id="js-chart-earnings" width="300" height="74"></canvas>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
-                    <div class="col-xl-4">
-                        <div class="c-progress-card" data-mh="graph-cards">
-                            <h3 class="c-progress-card__title">All Tasks Overview</h3>
-                            <p class="c-progress-card__date">Next 4 Weeks</p>
-
-                            <div class="c-progress-card__item">
-                                <div class="c-progress-card__label">Week 3</div>
-
-                                <div class="c-progress-card__progress c-progress c-progress--small">
-                                    <div class="c-progress__bar u-bg-success" style="width:100%;">
-                                        <div class="c-progress__bar u-bg-fancy" style="width: 70%">
-                                            <div class="c-progress__bar u-bg-info" style="width: 50%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- // .c-progress-card__item -->
-
-                            <div class="c-progress-card__item">
-                                <div class="c-progress-card__label">Week 4</div>
-
-                                <div class="c-progress-card__progress c-progress c-progress--small">
-                                    <div class="c-progress__bar u-bg-success" style="width:100%;">
-                                        <div class="c-progress__bar u-bg-fancy" style="width: 70%">
-                                            <div class="c-progress__bar u-bg-info" style="width: 50%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- // .c-progress-card__item -->
-
-                            <div class="c-progress-card__item">
-                                <div class="c-progress-card__label">Week 5</div>
-
-                                <div class="c-progress-card__progress c-progress c-progress--small">
-                                    <div class="c-progress__bar u-bg-success" style="width:100%;">
-                                        <div class="c-progress__bar u-bg-fancy" style="width: 70%">
-                                            <div class="c-progress__bar u-bg-info" style="width: 50%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- // .c-progress-card__item -->
-
-                            <div class="c-progress-card__item">
-                                <div class="c-progress-card__label">Week 6</div>
-
-                                <div class="c-progress-card__progress c-progress c-progress--small">
-                                    <div class="c-progress__bar u-bg-success" style="width:100%;">
-                                        <div class="c-progress__bar u-bg-fancy" style="width: 70%">
-                                            <div class="c-progress__bar u-bg-info" style="width: 50%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- // .c-progress-card__item -->
-                            
-                            <ul class="c-progress-card__legends">
-                                <li class="u-text-mute u-text-xsmall">
-                                    <i class="c-progress-card__legend u-bg-fancy"></i>Progress
-                                </li>
-                                <li class="u-text-mute u-text-xsmall">
-                                    <i class="c-progress-card__legend u-bg-info"></i>Due
-                                </li>
-                                <li class="u-text-mute u-text-xsmall">
-                                    <i class="c-progress-card__legend u-bg-success"></i>OA
-                                </li>
-                                <li class="u-text-mute u-text-xsmall">
-                                    <i class="c-progress-card__legend u-bg-danger"></i>Delegated
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                
                 </div>
 
               
@@ -298,57 +228,97 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="c-card u-mb-medium">
+
+                        <div class="c-card c-card--responsive u-mb-medium">
                             <div class="c-card__header c-card__header--transparent o-line">
-                                <h5 class="c-card__title">Tasks</h5>
+                                <h5 class="c-card__title">Instructions</h5>
+                               
+                            </div>
+                            
+                            <table class="c-table u-border-zero">
+                                <tbody>
+                                    <tr class="c-table__row u-border-top-zero">
+                                       <td style="font-size: 1rem;" class="c-table__cell">If you are a new user</td> 
+                                    </tr>
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell u-text-mute" style="width:0px;">Step-1 :</td>
+                                        <td class="c-table__cell" >Click on "generate Tax" button</td>
+                                        
+                                    </tr>
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell u-text-mute">Step-2 :</td>
+                                        <td class="c-table_cell"></td>                                    </tr>
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell u-text-mute">0Step-3 :</td>
+                                        <td class="c-table__cell">Landing Page</td>
+                                        
+                                    </tr>
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell u-text-mute">Step-4 :</td>
+                                        <td class="c-table__cell">iOS App Design</td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                        <!-- <div class="c-card u-mb-medium">
+                            <div class="c-card__header c-card__header--transparent o-line">
+                                <h5 class="c-card__title">Instructions</h5>
                                 <a class="c-card__meta" href="#">View all all tasks</a>
                             </div>
 
-                            <div class="c-todo u-border-top-zero">
-                                <input class="c-todo__input" id="todo1" type="checkbox" name="exampe-list">
-                                <label class="c-todo__label" for="todo1">
+                            <div class="c-table_row"> -->
+                                <!-- <input class="c-todo__input" id="todo1" type="checkbox" name="exampe-list"> -->
+                                <!-- <label class="" for="todo1">
                                     Create new prototype for the landing page
-                                </label>
+                                </label> -->
 
-                                <span class="c-badge c-badge--danger c-badge--small">Due Today</span>
-                            </div><!-- // .c-todo -->
+                                <!-- <span class="c-badge c-badge--danger c-badge--small">Due Today</span> -->
+                            <!-- </div> -->
 
-                            <div class="c-todo">
+                            <!-- <div class="c-todo">
                                 <input class="c-todo__input" id="todo2" type="checkbox" name="exampe-list">
                                 <label class="c-todo__label" for="todo2">
                                     Add new Google Analytics code to all main files
                                 </label>
 
                                 <span class="c-badge c-badge--secondary c-badge--small">Due in 2 Days</span>
-                            </div><!-- // .c-todo -->
+                            </div> -->
 
-                            <div class="c-todo">
+                            <!-- <div class="c-todo">
                                 <input class="c-todo__input" id="todo3" type="checkbox" name="exampe-list">
                                 <label class="c-todo__label" for="todo3">
                                     Finish Dashboard UI Kit update
-                                </label>
+                                </label> -->
 
-                                <span class="c-badge c-badge--secondary c-badge--small">Due in 3 Days</span>
-                            </div><!-- // .c-todo -->
+                                <!-- <span class="c-badge c-badge--secondary c-badge--small">Due in 3 Days</span>
+                            </div> -->
 
-                            <div class="c-todo is-completed">
+                            <!-- <div class="c-todo is-completed">
                                 <input class="c-todo__input" id="todo4" type="checkbox" name="exampe-list" checked>
                                 <label class="c-todo__label" for="todo4">
                                     Update parallax scroll on team page
                                 </label>
 
                                 <span class="c-badge c-badge--secondary c-badge--small">Due in 5 Days</span>
-                            </div><!-- // .c-todo -->
+                            </div>// .c-todo -->
 
-                            <div class="c-todo is-completed">
+                            <!-- <div class="c-todo is-completed">
                                 <input class="c-todo__input" id="todo5" type="checkbox" name="exampe-list" checked>
                                 <label class="c-todo__label" for="todo5">
                                     Update parallax scroll on team page
                                 </label>
 
                                 <span class="c-badge c-badge--secondary c-badge--small">Due in 1 Week</span>
-                            </div><!-- // .c-todo -->
-                        </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div><!-- // .row -->
 

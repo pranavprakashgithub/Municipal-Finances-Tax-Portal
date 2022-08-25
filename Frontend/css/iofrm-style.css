@@ -321,7 +321,7 @@ html, body {
 
 .form-content {
     position: relative;
-    background-color: #0093FF;
+    /* background-color: #0093FF; */
 }
 
 .form-content .form-group {
@@ -729,7 +729,7 @@ html, body {
     border: 0;
     padding: 6px 28px;
     background-color: #fff;
-    color: #29A4FF;
+    /* color: #29A4FF; */
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
@@ -1637,7 +1637,7 @@ input.sm-content {
 }
 
 .form-body.without-side .form-content .form-button .ibtn {
-    background-color: #29A4FF;
+    /* background-color: #29A4FF; */
     color: #fff;
     -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);

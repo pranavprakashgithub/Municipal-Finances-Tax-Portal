@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Gateway</title>
+    <link rel="stylesheet" href="user_css/">
+</head>
+<body>
+    <div id="page">
+        <div class="container">
+            <div class="outer">
+                <!-- <div class="header">
+                    <div class="logo">
+                        <a href="#"></a>
+                    </div>
+                    <div class="time-left">
+                        <time id="time">03:00</time>
+                        <span>time left !</span>
+                    </div>
+                </div> -->
+                <section class="payment">
+                    <div class="left">
+                        <form action="">
+                            <div class="card-number">
+                                <p>Card Number</p>
+                                <span>Enter the 16-digit card number on the card</span>
+                                <div class="card-number-box">
+                                    <input type="text"  id="credit-card" autocomplete="off" placeholder="">
+                                    <span class="cc-logo"></span>
+                                </div>
+                            </div>
+                            <div class="card-holdername">
+                                <div class="text">
+                                    <p>Card Holder Name</p>
+                                    <span>Enter the name of card holder name</span>
+                                </div>
+                                <div class="input">
+                                    <input type="text"  id="card-name" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="card-expiration">
+                                <div class="text">
+                                    <p>Expiry Date</p>
+                                    <span>Enter the expiration date of the card</span>
+                                </div>
+                                <div class="input">
+                                    <input type="number"  data-maxlength="2" placeholder="MM" autocomplete="off" required>
+                                        <strong>/</strong>
+                                    <input type="number"  data-maxlength="4" placeholder="YYYY" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="card-cvv">
+                                <div class="text">
+                                    <p>CVV Number</p>
+                                </div>
+                                <div class="input">
+                                    <input type="number"  data-maxlength="4" autocomplete="off" required>
+                                </div>
+                            </div>
+
+                            <button>Pay Now</button>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <div class="options">
+                            <select name="emi" onchange="changeForm()" id="emi">
+                                <option value="default" selected>--select--</option>
+                                <option value="emi">EMI</option>
+                            </select>
+                        </div>
+                        <div class="card-virtual">
+                            <p class="cc-logo"></p>
+                            <p class="name-holder">Arnab Chowdhury</p>
+                            <p class="chip"></p>
+                            <p class="highlight">
+                                <span class="last-digit" id="card-number">.... .... .... 4568</span>
+                                <span class="expiry">
+                                    <span class="exp-month">11</span>/
+                                    <span class="exp-year">25</span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="reciept">
+                            <ul>
+                                <li>
+                                    <span>Order Numebr</span>
+                                    <span>1540201</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <script src="user_js/gateway_script.js"></script>
+</body>
+</html>
