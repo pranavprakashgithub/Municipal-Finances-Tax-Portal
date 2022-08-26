@@ -11,25 +11,26 @@ const userSchema = mongoose.Schema({
     type: String,
     required: [true, "user must have last name!"],
   },
-  mobileNo: {
+  mobileNumber: {
     type: String,
-    // validate: [
-    //   validator.isMobilePhone,
-    //   validator.isNumeric,
-    //   "Please Enter valid Mobile Number!",
-    // ],
+    validate: [validator.isNumeric, "Please Enter valid Mobile Number!"],
+    minlength: 10,
+    maxlength: 10,
     // required: [true, "Please enter your Mobile Number!"],
   },
-  aadharNumber: {
+  adharNumber: {
     type: String,
     required: [true, "Please enter your aadhar Number!"],
     validate: [validator.isNumeric, "Please enter valid Aadhar Number!"],
+    unique: true,
+    minlength: [12, "Please enter valid adhar number!"],
+    maxlength: [12, "Please enter valid adhar number!"],
   },
   address: {
     type: String,
     // required: [true, "Please enter your address!"],
   },
-  pincode: {
+  pinCode: {
     type: Number,
     // required: [true, "Please enter pincode!"],
   },
@@ -39,6 +40,12 @@ const userSchema = mongoose.Schema({
     validate: [validator.isEmail, "Please enter valid Email!"],
     unique: true,
   },
+  property: [
+    {
+      type: mongoose.Schema.ObjectId,
+      ref: "UserProperty",
+    },
+  ],
   houseNumber: {
     type: Number,
     // required: [true, "Please enter House number!"],
@@ -46,6 +53,7 @@ const userSchema = mongoose.Schema({
   password: {
     type: String,
     required: [true, "Please enter Password!"],
+    minlength: [8, "Please enter Password with atleast 8 chars!"],
   },
   passwordChangedAt: Date,
 });

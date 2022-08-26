@@ -1770,7 +1770,7 @@ input.sm-content {
 }
 
 .form-body.without-side .form-content .form-button .ibtn {
-  background-color: #29a4ff;
+  background-color: rgb(11, 48, 118) !important;
   color: #fff;
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);

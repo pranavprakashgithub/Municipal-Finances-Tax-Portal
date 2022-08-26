@@ -10,7 +10,7 @@ const login = async (email, password) => {
     if (result.data.status === "success") {
       alert("your Logged in successfully!");
       window.setTimeout(() => {
-        location.assign("/userDashboard.pug");
+        location.assign("/userDashboard");
       }, 1000);
     }
   } catch (err) {

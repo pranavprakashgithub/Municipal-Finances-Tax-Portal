@@ -81,7 +81,7 @@ exports.signup = async (req, res) => {
     const newUser = await User.create({
       fname: req.body.fname,
       lname: req.body.lname,
-      aadharNumber: req.body.aadharNumber,
+      adharNumber: req.body.adharNumber,
       email: req.body.email,
       password: req.body.password,
     });
@@ -92,7 +92,7 @@ exports.signup = async (req, res) => {
   } catch (err) {
     res.status(400).json({
       status: "fail",
-      error: err.stack,
+      error: err.message,
     });
   }
 };
@@ -114,7 +114,7 @@ exports.login = async (req, res) => {
   } catch (err) {
     res.status(400).json({
       status: "fail",
-      error: err.stack,
+      error: err.message,
     });
   }
 };

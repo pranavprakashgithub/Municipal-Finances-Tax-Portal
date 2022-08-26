@@ -8,6 +8,15 @@ author:  ThemePunch
 email:      info@themepunch.com
 website:    http://www.themepunch.com
 -----------------------------------------------------------------------------*/
+/* added Inline */
+.link-step{
+    color:darkblue;
+}
+.link-step:hover{
+    color:white;
+}
+
+/*  */
 .ares.tparrows {
   cursor:pointer;
   background:#fff;

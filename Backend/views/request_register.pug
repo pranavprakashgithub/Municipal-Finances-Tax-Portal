@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Register | Dashboard UI Kit</title>
+        <title>Register | newProperty</title>
         <meta name="description" content="Dashboard UI Kit">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,37 +33,35 @@
                 
                 <form class="c-card__body">
                     <div class="c-field u-mb-small">
-                        <label class="c-field__label" for="input1">OLD PROPERTY OWNER NAME</label> 
-                        <input class="c-input" type="text" id="input1" placeholder="MICHAEL CLARKE" required> 
+                        <label class="c-field__label" for="oldPropOwnerName">OLD PROPERTY OWNER NAME</label> 
+                        <input class="c-input" type="text" id="oldPropOwnerName" placeholder="MICHAEL CLARKE" name="oldPropOwnerName" required> 
                         
                     </div>
 
                     <div class="c-field u-mb-small">
-                        <label class="c-field__label" for="input2">MOB NO.</label> 
-                        <input class="c-input" type="number" id="input2" placeholder="+91" required> 
+                        <label class="c-field__label" for="mobileNumber">MOB NO.</label> 
+                        <input class="c-input" type="number" id="mobileNumber" placeholder="+91" name ="mobileNumber" required> 
                     </div>
 
                     <div class="c-field u-mb-small">
-                        <label class="c-field__label" for="input3">AADHAR NUMBER</label> 
-                        <input class="c-input" type="number" id="input3" placeholder="XXXX-XXXX-XXXX-XXXX" required> 
+                        <label class="c-field__label" for="adharNumber">AADHAR NUMBER</label> 
+                        <input class="c-input" type="number" id="adharNumber" name ="adharNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required> 
                     </div>
                     <hr style="margin: 5px 0px 5px 0px;">
                     <div class="c-field u-mb-small">
-                        <label class="c-field__label" for="input1">PROPERTY NUMBER</label> 
-                        <input class="c-input" type="text" id="input1" required>
+                        <label class="c-field__label" for="propertyNumber">PROPERTY NUMBER</label> 
+                        <input class="c-input" type="text" id="propertyNumber" name ="propertyNumber" required>
                         
                     </div>
                     <div class="c-field u-mb-small">
-                        <label class="c-field__label" for="input1">PROPERTY ADDRESS</label> 
-                        <textarea class="c-input" type="text" id="input1" required> </textarea>
+                        <label class="c-field__label" for="propertyAddress">PROPERTY ADDRESS</label> 
+                        <textarea class="c-input" type="text" id="propertyAddress" name ="propertyAddress" required> </textarea>
                         
                     </div>
                     <div style="display: flex; justify-content: space-around;" class="flex-flex">
                         <div class="c-field u-mb-small">
-                            <label class="c-field__label" for="input1">AREA PINCODE</label> 
-                            <input style="width: 58%;" class="c-input" type="number" id="input1"  required>
-                            
-                            
+                            <label class="c-field__label" for="areaPincode">AREA PINCODE</label> 
+                            <input style="width: 58%;" class="c-input" type="number" id="areaPincode" name ="areaPincode" required>       
                         </div>
                         <div class="c-field u-mb-small">
                             <label class="c-field__label" for="input1">UPLOAD PHOTO</label> 
@@ -73,27 +71,24 @@
                         </div>
                     </div>
                     <hr style="margin: 5px 0px 5px 0px;">
-                    <div class="c-field u-mb-small">
-                        <label class="c-field__label" for="input1">NEW PROPERTY OWNER NAME</label> 
-                        <input class="c-input" type="text" id="input1" placeholder="MICHAEL CLARKE" required> 
+                    //- <div class="c-field u-mb-small">
+                    //-     <label class="c-field__label" for="input1">NEW PROPERTY OWNER NAME</label> 
+                    //-     <input class="c-input" type="text" id="input1" placeholder="MICHAEL CLARKE" required> 
                         
-                    </div>
+                    //- </div>
+
+                    //- <div class="c-field u-mb-small">
+                    //-     <label class="c-field__label" for="input2">MOB NO.</label> 
+                    //-     <input class="c-input" type="number" id="input2" placeholder="+91" required> 
+                    //- </div>
 
                     <div class="c-field u-mb-small">
-                        <label class="c-field__label" for="input2">MOB NO.</label> 
-                        <input class="c-input" type="number" id="input2" placeholder="+91" required> 
+                        <label class="c-field__label" for="input3">YOUR AADHAR NUMBER</label> 
+                        <input class="c-input" type="number" id="input3"  placeholder="XXXX-XXXX-XXXX-XXXX" value=#{user.adharNumber} required readonly> 
                     </div>
 
-                    <div class="c-field u-mb-small">
-                        <label class="c-field__label" for="input3">AADHAR NUMBER</label> 
-                        <input class="c-input" type="number" id="input3" placeholder="XXXX-XXXX-XXXX-XXXX" required> 
-                    </div>
-
-
-
-                    <button class="c-btn c-btn--info c-btn--fullwidth" type="submit">Request For Registration</button>
-
-                    
+                    <button class="c-btn c-btn--info c-btn--fullwidth" id="btn" type="button">Request For Registration</button>
+ 
                 </form>
                 
             </div>
@@ -110,6 +105,8 @@
             </div> 
         </div>
         <script src="https://kit.fontawesome.com/d0d4a8dd27.js" crossorigin="anonymous"></script>
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js")
         <script src="user_js/main.min.js"></script>
+        <script src="user_js/newPropRegistration.js"></script>
     </body>
 </html>

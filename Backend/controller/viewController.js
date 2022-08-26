@@ -1,5 +1,5 @@
 exports.overview = (req, res) => {
-  res.status(200).render("overview");
+  res.status(200).render("index_2");
 };
 exports.adminLogin = (req, res) => {
   res.status(200).render("adminLogin");
@@ -22,7 +22,7 @@ exports.userLogin = (req, res) => {
 };
 
 exports.userDashboard = (req, res) => {
-  res.status(200).render("user_dashboard");
+  res.status(200).render("user_dashboard_2");
 };
 exports.userProfile = (req, res) => {
   res.status(200).render("user_profile");
@@ -32,5 +32,5 @@ exports.requestRegister = (req, res) => {
   res.status(200).render("request_register");
 };
 exports.generateTax = (req, res) => {
-  res.status(200).render("generate_tax_form");
+  res.status(200).render("generate_tax_form_2");
 };

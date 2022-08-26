@@ -7,21 +7,23 @@ const router = express.Router();
 // router.use(authController.isLoggedIn);
 
 router.route("/").get(viewController.overview);
-router.route("/adminLogin.pug").get(viewController.adminLogin);
-router.route("/adminDashboard.pug").get(viewController.adminDashboard);
+router.route("/adminLogin").get(viewController.adminLogin);
+router.route("/adminDashboard").get(viewController.adminDashboard);
 router.route("/tables.pug").get(viewController.adminTables);
 router.route("/adminManageUser.pug").get(viewController.adminManageUser);
-router.route("/userSignup.pug").get(viewController.userSignup);
-router.route("/userLogin.pug").get(viewController.userLogin);
+router.route("/userSignup").get(viewController.userSignup);
+router.route("/userLogin").get(viewController.userLogin);
 router
-  .route("/userDashboard.pug")
+  .route("/userDashboard")
   .get(authController.protect, viewController.userDashboard);
 
 router
-  .route("/userProfile.pug")
+  .route("/userProfile")
   .get(authController.protect, viewController.userProfile);
 
-router.route("/requestRegister").get(viewController.requestRegister);
+router
+  .route("/requestRegister")
+  .get(authController.protect, viewController.requestRegister);
 router.route("/generateTaxForm").get(viewController.generateTax);
 
 module.exports = router;

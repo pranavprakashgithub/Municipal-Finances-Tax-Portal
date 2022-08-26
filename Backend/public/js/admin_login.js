@@ -8,7 +8,7 @@ const login = async (adminId, password) => {
     if (result.data.status === "success") {
       alert("Your are logged in successfully!");
       window.setTimeout(() => {
-        location.assign("/adminDashboard.pug");
+        location.assign("/adminDashboard");
       }, 1000);
     }
   } catch (err) {
