@@ -86,8 +86,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="u-mv-large u-text-center">
-                        <h2 class="u-mb-xsmall">Hi Jessica! Welcome back to the Dashboard.</h2>
-                        <p class="u-text-mute u-h6">Check out your past searches and the content you’ve browsed in. <a href="#">View last results</a></p>
+                        <h2 class="u-mb-xsmall">Welcome to Admin Dashboard.</h2>
+                        //- <p class="u-text-mute u-h6"> <a href="#">View last results</a></p>
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                             Start console and prepare new stuff for your customers or community!
                         </h4>
 
-                        <a class="c-btn c-btn--info" href="./adminManageUser.pug" onClick="MyWindow=window.open('./adminManageUser.pug','MyWindow','width=1000,height=500'); return false;">View your reports</a>
+                        <div class="c-btn c-btn--info" id="view"  >View your reports</div>
 
                     </div>
                 </div>
@@ -351,6 +351,8 @@
         </div>
 
         <!-- Main javascsript -->
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js")
         <script src="admin_js/main.min.js"></script>
+        <script src="admin_js/python.js"></script>
     </body>
 </html>

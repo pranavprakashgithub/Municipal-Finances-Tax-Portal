@@ -2,6 +2,7 @@ const Property = require("../model/propertyModel");
 const User = require("../model/userModel");
 const jwt = require("jsonwebtoken");
 const { promisify } = require("util");
+const { spawn } = require("child_process");
 
 exports.registerProperty = async (req, res, next) => {
   try {
@@ -58,4 +59,21 @@ exports.registerProperty = async (req, res, next) => {
       error: err.message,
     });
   }
+};
+
+exports.viewChart = (req, res) => {
+  let data1;
+  const childPython = spawn("python", ["knn_fetching.py"]);
+  childPython.stdout.on("data", (data) => {
+    // console.log(`stdout: ${data}`);
+    data1 = data.toString();
+  });
+
+  childPython.stderr.on("data", (data) => {
+    console.error(`stderr: ${data}`);
+  });
+  childPython.on("close", (code) => {
+    // console.log(`child process exited with code : ${code}`);
+    res.send(data1);
+  });
 };
